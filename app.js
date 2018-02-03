@@ -11,7 +11,9 @@ var User = require("./models/user");
 var methodOverride = require("method-override");
 var seedDB = require("./seeds");
 
-mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://Kai:yelpcamp@ds223578.mlab.com:23578/yelpcamp");
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
