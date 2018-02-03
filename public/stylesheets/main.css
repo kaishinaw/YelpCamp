@@ -1,0 +1,8 @@
+
+.mx-auto {
+  width: 98%;
+}
+
+#post-delete-form, #comment-delete-button {
+  display: inline;
+}
